@@ -1,0 +1,49 @@
+/* 
+comentario!!!!
+*/
+
+*{
+    color: blue;
+}
+p{
+    color: red;
+    width: 600px;
+    border: 5px solid pink;
+    margin: 10px;
+}
+h1{
+    border: 1px solid salmon;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 15px 25px 20px;
+    font-weight: bold;
+    color: grey;
+}
+
+section{
+    border: 1px solid blue;
+    width: min-content;
+    overflow-wrap: break-word;
+    font-family: 'Gloock', serif;
+}
+
+#mi_parrafo{
+    color: blueviolet;
+    border: orange;
+}
+
+span{
+    color:darkseagreen;
+}
+
+.estaesmiclase{
+    font-weight: bold;
+    color: yellowgreen;
+}
+
+section h1{
+    color: blueviolet;
+    font-weight: bolder;
+}
