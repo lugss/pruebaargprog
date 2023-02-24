@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@font-face {
+    font-family: "Dahlia";
+    src: url('/final_project/fonts/dahlia-medium.eot');
+    src: url('/final_project/fonts/dahlia-medium.woff2') format('woff2'),
+         url('/final_project/fonts/dahlia-medium.woff') format('woff'),
+         url('/final_project/fonts/dahlia-medium.ttf') format('truetype');
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    margin: 0;
+    margin-top: 50px;
+    font-family: 'Inter', sans-serif;
+    background: rgb(245,206,199);
+    background: linear-gradient(90deg, rgba(245,206,199,1) 17%, rgba(255,201,139,1) 100%);
+}
+
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #f5cec7;
+    box-shadow: 0 0 25px 0 black;
+}
+
+header *{
+    display: inline;
+    height: 50px;
+}
+
+header li{
+    margin-left: 20px;
+}
+
+h1{
+    font-size: 5em;
+    font-family: "Dahlia", 'Vidaloka', serif;
+}
+
+section{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+section h2{
+    font-size: 2.5em;
+    font-family: 'Syne', serif;
+}
+
+.profile_image {
+    height: 300px; 
+    width: 200px;
+    border-radius: 50%;
+}
+
+p{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+footer{
+    text-align: center;
+    padding: 50px;
+}
