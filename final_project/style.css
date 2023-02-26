@@ -13,13 +13,16 @@ html{
     scroll-behavior: smooth;
 }
 
+*{
+    box-sizing: border-box;
+}
 
 body{
     margin: 0;
     margin-top: 50px;
     font-family: 'Inter', sans-serif;
-    background: rgb(245,206,199);
-    background: linear-gradient(90deg, rgba(245,206,199,1) 17%, rgba(255,201,139,1) 100%);
+    background-image: url('/images/background.jpg');
+
 }
 
 header{
@@ -30,8 +33,10 @@ header{
     right: 0;
     height: 50px;
     line-height: 50px;
-    background-color: #f5cec7;
-    box-shadow: 0 0 25px 0 black;
+    background-image: url(/images/background.jpg);
+    border: solid #1F442E;
+    font-family: 'Syne', sans-serif;
+    margin: 5px;
 }
 
 header *{
@@ -43,28 +48,61 @@ header li{
     margin-left: 20px;
 }
 
+header img{
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+a:link{
+    color: #1F442E;
+    text-decoration: none;
+}
+a:visited{
+    color:grey
+}
+a:hover{
+    color: #2D6242;
+    text-decoration: underline;
+}
+a:active{
+    text-decoration: underline;
+}
+
 h1{
     font-size: 5em;
     font-family: "Dahlia", 'Vidaloka', serif;
+    color: #1F442E;
 }
 
 section{
-    height: 40vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
+    padding: 50px;
+    border: solid #1F442E;
+    margin: 20px;
 }
+
+#lourdes{
+    margin-top: 75px;
+}
+
 
 section h2{
     font-size: 2.5em;
     font-family: 'Syne', serif;
+    color:#1F442E;
 }
 
 .profile_image {
     height: 300px; 
-    width: 200px;
+    width: 300px;
     border-radius: 50%;
 }
 
