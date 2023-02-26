@@ -15,6 +15,8 @@ html{
 
 *{
     box-sizing: border-box;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 body{
@@ -36,7 +38,8 @@ header{
     background-image: url(/images/background.jpg);
     border: solid #1F442E;
     font-family: 'Syne', sans-serif;
-    margin: 5px;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 header *{
@@ -44,9 +47,27 @@ header *{
     height: 50px;
 }
 
+header img{
+    margin-right: 0px;
+}
+
 header li{
     margin-left: 20px;
 }
+
+.navbar{
+    margin-left: 0px;
+    width: 100%;
+}
+
+.navbar a.active{
+    color:#2D6242;
+}
+
+.navbar .icon {
+    display: none;
+    padding-right:20px;
+  }
 
 header img{
     margin-top: 5px;
@@ -72,7 +93,7 @@ a:active{
 }
 
 h1{
-    font-size: 5em;
+    font-size: calc(5em + 2vw);
     font-family: "Dahlia", 'Vidaloka', serif;
     color: #1F442E;
 }
@@ -95,18 +116,21 @@ section{
 
 
 section h2{
-    font-size: 2.5em;
+    font-size: calc(2.5em - .5vw);
     font-family: 'Syne', serif;
     color:#1F442E;
 }
 
 .profile_image {
-    height: 300px; 
-    width: 300px;
+    height: 100%; 
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
     border-radius: 50%;
 }
 
 p{
+    margin-top: 10px;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -114,4 +138,78 @@ p{
 footer{
     text-align: center;
     padding: 50px;
+}
+
+
+/* xsmall*/
+@media screen and (max-width: 576px){
+    .navbar a:not(.nav-link-home) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+      margin-right: 0px;
+    }
+    .profile_image{
+        width: 75%;
+        height: 75%;
+    }
+    body h1{
+        font-size: calc(5em - 10vw);
+    }
+    body h2{
+        font-size: calc(2.5em - 5vw);
+    }
+    p{
+        margin-left: 0px;
+        margin-right:0px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-size: 15px;
+    }
+    
+}
+
+/* small */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .navbar a:not(.nav-link-home) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+      margin-right: 0px;
+    }
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+/* medium */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+}
+
+/* large */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+ 
+}
+
+/* extra large */
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+
+}
+
+/* extra extra large */
+@media screen and (min-width: 1400px){
+    h1{
+        font-size: calc(5em + .5vw);
+    }
+    h2{
+        font-size: calc(2.5em + .5vw);
+    }
 }
