@@ -9,6 +9,7 @@
          url('/final_project/fonts/dahlia-medium.ttf') format('truetype');
 }
 
+/* GENERAL */
 html{
     scroll-behavior: smooth;
 }
@@ -26,6 +27,24 @@ body{
     background-image: url('/images/background.jpg');
 
 }
+
+a:link{
+    color: #1F442E;
+    text-decoration: none;
+}
+a:visited{
+    color:grey
+}
+a:hover{
+    color: #2D6242;
+    text-decoration: underline;
+}
+a:active{
+    text-decoration: underline;
+    color:#2D6242;
+}
+
+/* HEADER */
 
 header{
     display: flex;
@@ -49,27 +68,6 @@ header *{
 
 header img{
     margin-right: 0px;
-}
-
-header li{
-    margin-left: 20px;
-}
-
-.navbar{
-    margin-left: 0px;
-    width: 100%;
-}
-
-.navbar a.active{
-    color:#2D6242;
-}
-
-.navbar .icon {
-    display: none;
-    padding-right:20px;
-  }
-
-header img{
     margin-top: 5px;
     margin-left: 10px;
     margin-bottom: 5px;
@@ -77,21 +75,44 @@ header img{
     width: 40px;
 }
 
-a:link{
-    color: #1F442E;
-    text-decoration: none;
-}
-a:visited{
-    color:grey
-}
-a:hover{
-    color: #2D6242;
-    text-decoration: underline;
-}
-a:active{
-    text-decoration: underline;
+/* NAVBAR */
+#navbar{
+    margin-left: 0px;
+    width: 100%;
 }
 
+#navbar ul {
+    display: block;
+    margin-left: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li {
+    padding: 10px;
+}
+
+#menu_toggle {
+    display: none;
+    padding-right:20px;
+    float: right;
+    margin-right: 0px;
+}
+
+#menu_container{
+    display: none;
+}
+
+#menu_container.show_menu{
+    display: block;
+}
+
+ul.list{
+    display: inline-block;
+    text-align: left;
+}
+
+/* TEXT */
 h1{
     font-size: calc(5em + 2vw);
     font-family: "Dahlia", 'Vidaloka', serif;
@@ -110,16 +131,23 @@ section{
     margin: 20px;
 }
 
-#lourdes{
-    margin-top: 75px;
-}
-
-
 section h2{
     font-size: calc(2.5em - .5vw);
     font-family: 'Syne', serif;
     color:#1F442E;
 }
+
+p{
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#lourdes{
+    margin-top: 75px;
+}
+
+
 
 .profile_image {
     height: 100%; 
@@ -129,26 +157,35 @@ section h2{
     border-radius: 50%;
 }
 
-p{
-    margin-top: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
 footer{
     text-align: center;
     padding: 50px;
 }
 
+/* MEDIA QUERIES */
 
-/* xsmall*/
+/* xsmall */
 @media screen and (max-width: 576px){
-    .navbar a:not(.nav-link-home) {display: none;}
-    .navbar a.icon {
-      float: right;
-      display: block;
-      margin-right: 0px;
+    #navbar ul {
+        display: none;
     }
+    
+    #menu_toggle {
+        display: block;
+    }
+    
+    #navbar.show_menu ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+    }
+
+    a:link:not(#menu_toggle){
+        background-color: #E9DCC9;
+    }
+
+
     .profile_image{
         width: 75%;
         height: 75%;
@@ -171,37 +208,24 @@ footer{
 
 /* small */
 @media screen and (min-width: 576px) and (max-width: 768px) {
-    .navbar a:not(.nav-link-home) {display: none;}
-    .navbar a.icon {
-      float: right;
-      display: block;
-      margin-right: 0px;
+    #navbar ul {
+        display: none;
     }
-    .navbar.responsive {position: relative;}
-    .navbar.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+    
+    #menu_toggle {
+        display: block;
     }
-    .navbar.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+    
+    #navbar.show_menu ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+    }  
+
+    a:link:not(#menu_toggle){
+        background-color: #E9DCC9;
     }
-}
-
-/* medium */
-@media screen and (min-width: 768px) and (max-width: 992px) {
-}
-
-/* large */
-@media screen and (min-width: 992px) and (max-width: 1200px) {
- 
-}
-
-/* extra large */
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
-
 }
 
 /* extra extra large */
