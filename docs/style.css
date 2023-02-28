@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @font-face {
     font-family: "Dahlia";
-    src: url('/argprog/docs/fonts/dahlia-medium.eot');
-    src: url('/argprog/docs/fonts/dahlia-medium.woff2') format('woff2'),
-         url('/argprog/docs/fonts/dahlia-medium.woff') format('woff'),
-         url('/argprog/docs/fonts/dahlia-medium.ttf') format('truetype');
+    src: url('./argprog/docs/fonts/dahlia-medium.eot');
+    src: url('./argprog/docs/fonts/dahlia-medium.woff2') format('woff2'),
+         url('./argprog/docs/fonts/dahlia-medium.woff') format('woff'),
+         url('./argprog/docs/fonts/dahlia-medium.ttf') format('truetype');
 }
 
 /* GENERAL */
@@ -24,7 +24,7 @@ body{
     margin: 0;
     margin-top: 50px;
     font-family: 'Inter', sans-serif;
-    background-image: url('/argprog/docs/assets/background.jpg');
+    background-image: url('./argprog/docs/assets/background.jpg');
 
 }
 
@@ -54,7 +54,7 @@ header{
     right: 0;
     height: 50px;
     line-height: 50px;
-    background-image: url(/argprog/docs/assets/background.jpg);
+    background-image: url('./argprog/docs/assets/background.jpg');
     border: solid #1F442E;
     font-family: 'Syne', sans-serif;
     margin: 0 auto;
