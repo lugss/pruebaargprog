@@ -107,9 +107,12 @@ header img{
     display: block;
 }
 
-ul.list{
+ul{
     display: inline-block;
     text-align: left;
+}
+div.education_skills {
+	text-align: center;
 }
 
 /* TEXT */
@@ -118,6 +121,26 @@ h1{
     font-family: "Dahlia", 'Vidaloka', serif;
     color: #1F442E;
 }
+h2{
+    font-size: calc(2.5em - .5vw);
+    font-family: 'Syne', serif;
+    color:#1F442E;
+    padding: 10px;
+}
+
+h3{
+    font-family: 'Syne', serif;
+    padding:10px;
+}
+
+p{
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
+}
+
+/* SECTIONS */
 
 section{
     height: fit-content;
@@ -131,23 +154,9 @@ section{
     margin: 20px;
 }
 
-section h2{
-    font-size: calc(2.5em - .5vw);
-    font-family: 'Syne', serif;
-    color:#1F442E;
-}
-
-p{
-    margin-top: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
 #lourdes{
     margin-top: 75px;
 }
-
-
 
 .profile_image {
     height: 100%; 
@@ -157,10 +166,10 @@ p{
     border-radius: 50%;
 }
 
-footer{
+#contact p {
     text-align: center;
-    padding: 50px;
 }
+
 
 /* MEDIA QUERIES */
 
@@ -228,7 +237,7 @@ footer{
     }
 }
 
-/* extra extra large */
+/* xxlarge */
 @media screen and (min-width: 1400px){
     h1{
         font-size: calc(5em + .5vw);
