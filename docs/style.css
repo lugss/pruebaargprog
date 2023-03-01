@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @font-face {
     font-family: "Dahlia";
-    src: url('./argprog/docs/fonts/dahlia-medium.eot');
-    src: url('./argprog/docs/fonts/dahlia-medium.woff2') format('woff2'),
-         url('./argprog/docs/fonts/dahlia-medium.woff') format('woff'),
-         url('./argprog/docs/fonts/dahlia-medium.ttf') format('truetype');
+    src: url('fonts/dahlia-medium.eot.eot');
+    src: url('fonts/dahlia-medium.woff2') format('woff2'),
+         url('fonts/dahlia-medium.woff') format('woff'),
+         url('fonts/dahlia-medium.ttf') format('truetype');
 }
 
 /* GENERAL */
